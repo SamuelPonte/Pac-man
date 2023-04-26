@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="scoreStyle">
+        <span>Score: </span>
+        <span id="scoreEl">0</span>
+    </div>
+
+    <div class="bgstart" id="modalEl">
+        <img  src="Image/capa_pacman.jpg" width="1000px" alt="">
+        <button class="Start" id="StartGame">Start</button>
+    </div>
+
+    <div class="gradient-border" id="modalWin">
+        <span class="textWin" id="EndWin">You Win!!</span>
+        <button class="again" id="againBtn">Play Again</button>
+    </div>
+
+    <div class="BgLose" id="modalLose">
+        <span class="textLose" id="EndLose">Game Over</span>
+        <button class="restart" id="restartBtn">Try Again</button>
+    </div>
+
+
+
+    <div class="bgJG">
+        <canvas id="jogo" width="700" height="540"></canvas>
+    </div>
+
+    <script type="module" src="src/component.js"></script>
+    <script type="module" src="src/game.js"></script>
+    <script type="module" src="src/player.js"></script>
+    <script type="module" src="src/main.js"></script>
+
+</body>
+
+</html>
